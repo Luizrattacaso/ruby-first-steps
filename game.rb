@@ -2,14 +2,14 @@ $player = nil
 $computer = nil
 
 $validOptions = {
-    1 => "Stone",
+    1 => "Rock",
     2 => "Paper",
     3 => "Scissors"
 }
 
 $winsTo = {
-    "Stone" => "Scissors",
-    "Paper" => "Stone",
+    "Rock" => "Scissors",
+    "Paper" => "Rock",
     "Scissors" => "Paper"
 }
 
@@ -18,7 +18,7 @@ def pickOption
     puts "=-"*7
     puts "Pick an option"
     puts "=-"*7
-    puts "[1] Stone\n[2] Paper\n[3] Scissors\n[4] Exit"
+    puts "[1] Rock\n[2] Paper\n[3] Scissors\n[4] Exit"
     puts "\nGet a option ==> "
     option = gets.chomp().to_i
 
